@@ -1,5 +1,5 @@
 module DemoPackageVT
 
-print_greeting() = printstyled("Hello, world!"; color=:cyan)
+print_greeting(io::IO = stdout) = printstyled(io, "Hello, world!"; color=:cyan)
 
 end
